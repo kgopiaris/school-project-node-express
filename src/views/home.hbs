@@ -1,0 +1,18 @@
+<div class="jumbotron">
+  <h1 class="display-4">Hello, world!</h1>
+  <p class="lead">Welcome to the School management portal.</p>
+  <hr class="my-4">
+
+  {{{view_btn_str}}}
+
+  {{!-- <a class="btn btn-primary btn-lg" href="/author/login" role="button">Author Login</a> --}}
+</div>
+{{#each posts}}
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">{{this.title}}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Author: {{this.Writer.firstName }} {{this.Writer.lastName}}</h6>
+    <p class="card-text">{{this.content}}</p>
+  </div>
+</div>
+{{/each}}

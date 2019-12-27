@@ -1,0 +1,74 @@
+[
+  {
+    "firstName": "Gopi",
+    "lastName": "Kirupanithi",
+    "isSuperUser": true,
+    "isStaff": false,
+    "email": "admin@test.com",
+    "password": "123456",
+    "reporterId": null
+  },
+  {
+    "firstName": "Arun",
+    "lastName": "Kumar",
+    "isSuperUser": false,
+    "isStaff": true,
+    "email": "arunk@test.com",
+    "password": "123456",
+    "reporterId": 1
+  },
+  {
+    "firstName": "Dani",
+    "lastName": "Akash",
+    "isSuperUser": false,
+    "isStaff": true,
+    "email": "dani@test.com",
+    "password": "123456",
+    "reporterId": 1
+  },
+  {
+    "firstName": "Thiru",
+    "lastName": "Vikraman",
+    "isSuperUser": false,
+    "isStaff": true,
+    "email": "thiru@test.com",
+    "password": "123456",
+    "reporterId": 1
+  },
+  {
+    "firstName": "Student1",
+    "lastName": "Student1",
+    "isSuperUser": false,
+    "isStaff": false,
+    "email": "std1@test.com",
+    "password": "123456",
+    "reporterId": 3
+  },
+  {
+    "firstName": "Student2",
+    "lastName": "Student2",
+    "isSuperUser": false,
+    "isStaff": false,
+    "email": "std2@test.com",
+    "password": "123456",
+    "reporterId": 3
+  },
+  {
+    "firstName": "Student3",
+    "lastName": "Student3",
+    "isSuperUser": false,
+    "isStaff": false,
+    "email": "std3@test.com",
+    "password": "123456",
+    "reporterId": 4
+  },
+  {
+    "firstName": "Student4",
+    "lastName": "Student4",
+    "isSuperUser": false,
+    "isStaff": false,
+    "email": "std4@test.com",
+    "password": "123456",
+    "reporterId": 4
+  }
+]

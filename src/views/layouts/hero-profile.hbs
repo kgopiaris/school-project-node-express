@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {{> meta}}
+  {{> bootstrap}}
+  <title>{{title}}</title>
+</head>
+
+<body>
+  {{#if current_user}}
+  <div class="text-right">
+    <a class="btn btn-outline-primary" href="/user" role="button">Home</a>
+    {{#if current_user.isSuperUser}}
+    <a class="btn btn-outline-primary" href="/user" role="button">Users</a>
+    {{else if current_user.isStaff}}
+    <a class="btn btn-outline-primary" href="/user" role="button">Users</a>
+    {{/if}}
+    <a class="btn btn-outline-primary" href="/user/logout" role="button">Sign out</a>
+  </div>
+  {{/if}}
+  {{{body}}}
+</body>
+
+</html>

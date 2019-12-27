@@ -1,0 +1,13 @@
+{{#if current_user}}
+<ul class="list-group list-group-flush">
+  <li class="list-group-item">First Name: <span style="padding-left:10px;">{{current_user.firstName}}</span></li>
+  <li class="list-group-item">Last Name: <span style="padding-left:10px;">{{current_user.lastName}}</span></li>
+  <li class="list-group-item">Email: <span style="padding-left:10px;">{{current_user.email}}</span></li>
+  <li class="list-group-item">category: <span style="padding-left:10px;">
+    {{#if current_user.isStaff}}Teacher
+      {{else if current_user.isSuperUser}}Admin
+      {{else}}Student
+      {{/if}}</span></li>
+</ul>
+
+{{/if}}

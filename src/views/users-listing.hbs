@@ -1,0 +1,47 @@
+<div class="jumbotron">
+  {{!-- <a class="btn btn-primary btn-lg float-right" href="/user/profile" role="button">view Profile</a> &nbsp;
+  <a class="btn btn-primary btn-lg float-right" href="/user/logout" role="button">Logout</a>   --}}
+  <h1 class="display-4">Hello {{current_user.firstName}}!</h1>
+  <p class="lead">The list of {{#if current_user.isSuperUser}}teachers and students!{{else if current_user.isStaff }}
+    students!{{/if}}</p>
+  <hr class="my-4">
+  <a class="btn btn-outline-primary" href="/user/adduser" role="button">Add users</a>
+</div>
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">First Name</th>
+      <th scope="col">Last Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">User Type</th>
+      <th scope="col">Action</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    {{#each users}}
+    <tr>
+      <th scope="row">{{this.id}}</th>
+      <td>{{this.firstName}}</td>
+      <td>{{this.lastName}}</td>
+      <td>{{this.email}}</td>
+      <td>
+      {{#if this.isStaff}}
+        <span class="badge badge-pill badge-success ">Staff</span>
+      {{else}}
+        <span class="badge badge-pill badge-info">Student</span>
+      {{/if}}
+      </td>
+      <td>
+        {{#if this.isStaff }}
+        {{else current_user.isSuperUser}}
+        {{else}}
+          <a href="/marks/{{this.id}}" class="badge  badge-secondary">View Marks</a>
+          <a href="/marks/add/{{this.id}}" class="badge  badge-primary">Add Marks</a>
+        {{/if}}
+      </td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>

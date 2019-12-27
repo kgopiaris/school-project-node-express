@@ -1,0 +1,46 @@
+[
+  {
+    "regNo": "1001",
+    "class": "6th",
+    "section": "A",
+    "examName": "Monthly Test Nov-2019",
+    "maths": 89,
+    "science": 93,
+    "language": 94,
+    "studId": 5,
+    "teacherId": 3
+  },
+  {
+    "regNo": "1011",
+    "class": "6th",
+    "section": "B",
+    "examName": "Monthly Test Nov-2019",
+    "maths": 66,
+    "science": 77,
+    "language": 88,
+    "studId": 6,
+    "teacherId": 3
+  },
+  {
+    "regNo": "1015",
+    "class": "6th",
+    "section": "A",
+    "examName": "Monthly Test Nov-2019",
+    "maths": 55,
+    "science": 66,
+    "language": 99,
+    "studId": 7,
+    "teacherId": 4
+  },
+  {
+    "regNo": "1016",
+    "class": "6th",
+    "section": "B",
+    "examName": "Monthly Test Nov-2019",
+    "maths": 87,
+    "science": 97,
+    "language": 98,
+    "studId": 8,
+    "teacherId": 4
+  }
+]
